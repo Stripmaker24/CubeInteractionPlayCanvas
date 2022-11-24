@@ -1,0 +1,1 @@
+var CubeSpin=pc.createScript("cubeSpin");CubeSpin.prototype.initialize=function(){this.rotatespeed=5,this.startSpeed=5},CubeSpin.prototype.update=function(t){this.app.mouse.wasPressed(pc.MOUSEBUTTON_LEFT)?this.rotatespeed+=10:this.rotatespeed>this.startSpeed&&(this.rotatespeed-=.1),this.entity.rotate(this.rotatespeed*t,this.rotatespeed*t,0)};
